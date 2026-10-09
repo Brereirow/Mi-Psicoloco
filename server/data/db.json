@@ -803,6 +803,36 @@
   ],
   "auditLogs": [
     {
+      "id": "aud-1791567727092-11as",
+      "userId": "usr-admin-1",
+      "userName": "Dra. Elena Ramos",
+      "role": "admin",
+      "action": "CAMBIO_DEMO_ROL",
+      "details": "Cambio interactivo a rol admin",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-10-09T17:42:07.092Z"
+    },
+    {
+      "id": "aud-1791567593855-nee1",
+      "userId": "usr-student-1",
+      "userName": "Carlos Mendoza",
+      "role": "student",
+      "action": "CAMBIO_DEMO_ROL",
+      "details": "Cambio interactivo a rol student",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-10-09T17:39:53.855Z"
+    },
+    {
+      "id": "aud-1791567584874-ohkz",
+      "userId": "usr-student-1",
+      "userName": "Carlos Mendoza",
+      "role": "student",
+      "action": "CAMBIO_DEMO_ROL",
+      "details": "Cambio interactivo a rol student",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-10-09T17:39:44.874Z"
+    },
+    {
       "id": "aud-1791564840575-rd5b",
       "userId": "usr-student-1",
       "userName": "Carlos Mendoza",
