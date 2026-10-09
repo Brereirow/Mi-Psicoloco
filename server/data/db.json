@@ -1,0 +1,1362 @@
+{
+  "institutions": [
+    {
+      "id": "inst-1",
+      "name": "Instituto Tecnológico Demo",
+      "code": "ITD-MEX-2026",
+      "supportPhone": "+52 800 999 4357",
+      "supportEmail": "bienestar@institutodemo.edu",
+      "emergencyContact": "Servicio Médico y Orientación Psicológica Ext. 104 / 911"
+    }
+  ],
+  "users": [
+    {
+      "id": "usr-student-1",
+      "name": "Carlos Mendoza",
+      "email": "carlos.mendoza@estudiante.edu",
+      "passwordHash": "67079bfd44dbf6149c87a7c2c71759fecdd171f9ed9e27f256146db339f8bef0",
+      "role": "student",
+      "institutionId": "inst-1",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+      "phone": "+52 55 1234 5678",
+      "active": true,
+      "createdAt": "2026-09-01T08:00:00.000Z",
+      "updatedAt": "2026-09-01T08:00:00.000Z"
+    },
+    {
+      "id": "usr-teacher-1",
+      "name": "Prof. Roberto Silva",
+      "email": "roberto.silva@docente.edu",
+      "passwordHash": "8ff6d98553da4661c841e1ce8bf0228890ea570082d491ae7c80d30f9d8f488a",
+      "role": "teacher",
+      "institutionId": "inst-1",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
+      "phone": "+52 55 8765 4321",
+      "active": true,
+      "createdAt": "2026-09-01T08:00:00.000Z",
+      "updatedAt": "2026-09-01T08:00:00.000Z"
+    },
+    {
+      "id": "usr-psych-1",
+      "name": "Lic. Mariana Gómez",
+      "email": "mariana.gomez@bienestar.edu",
+      "passwordHash": "9c494c15cd871729e3c0796a1653f3d5f86e1c6c588bf4fbdf203ddadbe02fb6",
+      "role": "psychologist",
+      "institutionId": "inst-1",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80",
+      "phone": "+52 55 4567 8901",
+      "active": true,
+      "createdAt": "2026-09-01T08:00:00.000Z",
+      "updatedAt": "2026-09-01T08:00:00.000Z"
+    },
+    {
+      "id": "usr-admin-1",
+      "name": "Dra. Elena Ramos",
+      "email": "elena.ramos@instituto.edu",
+      "passwordHash": "6b31e33fbb4fa7d7f095a34c00a5ab94d926b7eaa0fa55c49f832273e7edf262",
+      "role": "admin",
+      "institutionId": "inst-1",
+      "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&auto=format&fit=crop&q=80",
+      "phone": "+52 55 9999 8888",
+      "active": true,
+      "createdAt": "2026-09-01T08:00:00.000Z",
+      "updatedAt": "2026-09-01T08:00:00.000Z"
+    }
+  ],
+  "students": [
+    {
+      "id": "std-1",
+      "userId": "usr-student-1",
+      "studentIdNumber": "MAT-2026-894",
+      "currentSemester": 3,
+      "groupId": "grp-3a",
+      "emergencyContactName": "Laura Mendoza (Madre)",
+      "emergencyContactPhone": "+52 55 9876 5432"
+    }
+  ],
+  "teachers": [
+    {
+      "id": "tch-1",
+      "userId": "usr-teacher-1",
+      "department": "Ciencias Exactas e Ingeniería",
+      "cubicle": "Edificio B - 204"
+    }
+  ],
+  "psychologists": [
+    {
+      "id": "psy-1",
+      "userId": "usr-psych-1",
+      "licenseNumber": "CED-PSI-994821",
+      "office": "Módulo de Orientación y Bienestar - Cubículo 3"
+    }
+  ],
+  "groups": [
+    {
+      "id": "grp-3a",
+      "name": "3° Semestre - Grupo A",
+      "shift": "Matutino",
+      "academicYear": "2026-2027"
+    },
+    {
+      "id": "grp-3b",
+      "name": "3° Semestre - Grupo B",
+      "shift": "Vespertino",
+      "academicYear": "2026-2027"
+    },
+    {
+      "id": "grp-1791555094261",
+      "name": "3° Semestre - Grupo C",
+      "shift": "Matutino",
+      "academicYear": "2026-2027"
+    }
+  ],
+  "subjects": [
+    {
+      "id": "subj-1",
+      "name": "Matemáticas III (Cálculo)",
+      "code": "MAT-301",
+      "groupId": "grp-3a",
+      "teacherId": "usr-teacher-1",
+      "schedule": "Lun y Mié 08:00 - 10:00",
+      "classroom": "Aula Magna 102",
+      "color": "#3B82F6"
+    },
+    {
+      "id": "subj-2",
+      "name": "Física General",
+      "code": "FIS-201",
+      "groupId": "grp-3a",
+      "teacherId": "usr-teacher-1",
+      "schedule": "Mar y Jue 10:00 - 12:00",
+      "classroom": "Laboratorio de Física 1",
+      "color": "#10B981"
+    },
+    {
+      "id": "subj-3",
+      "name": "Historia Contemporánea",
+      "code": "HIS-103",
+      "groupId": "grp-3a",
+      "teacherId": "usr-teacher-1",
+      "schedule": "Vie 08:00 - 11:00",
+      "classroom": "Aula 205",
+      "color": "#F59E0B"
+    },
+    {
+      "id": "subj-4",
+      "name": "Química Orgánica",
+      "code": "QUI-202",
+      "groupId": "grp-3a",
+      "teacherId": "usr-teacher-1",
+      "schedule": "Lun y Mié 11:00 - 13:00",
+      "classroom": "Laboratorio Central",
+      "color": "#8B5CF6"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "tsk-1791555099208",
+      "subjectId": "subj-1",
+      "title": "Examen de Recuperación Cálculo",
+      "description": "Guía de repaso",
+      "type": "exam",
+      "dueDate": "2026-10-20",
+      "dueTime": "10:00",
+      "priority": "alta",
+      "status": "pendiente",
+      "hasReminder": true,
+      "createdBy": "usr-teacher-1",
+      "createdAt": "2026-10-09T14:11:39.208Z",
+      "updatedAt": "2026-10-09T14:11:39.208Z"
+    },
+    {
+      "id": "tsk-1",
+      "subjectId": "subj-1",
+      "studentId": "usr-student-1",
+      "title": "Examen de Matemáticas (Derivadas e Integrales)",
+      "description": "Evaluación parcial sobre aplicaciones de razón de cambio y cálculo integral.",
+      "type": "exam",
+      "dueDate": "2026-10-12",
+      "dueTime": "08:00",
+      "priority": "alta",
+      "status": "pendiente",
+      "hasReminder": true,
+      "studyPlan": {
+        "sessions": [
+          {
+            "day": "Día 1",
+            "durationMinutes": 30,
+            "focus": "Repaso conceptual y formulario de derivadas"
+          },
+          {
+            "day": "Día 2",
+            "durationMinutes": 45,
+            "focus": "Resolución de problemas prácticos y ejercicios tipo examen"
+          },
+          {
+            "day": "Día 3",
+            "durationMinutes": 20,
+            "focus": "Simulacro cronometrado y dudas específicas"
+          }
+        ]
+      },
+      "createdBy": "usr-teacher-1",
+      "createdAt": "2026-10-01T10:00:00.000Z",
+      "updatedAt": "2026-10-01T10:00:00.000Z"
+    },
+    {
+      "id": "tsk-2",
+      "subjectId": "subj-3",
+      "studentId": "usr-student-1",
+      "title": "Proyecto de Historia - Ensayo Siglo XX",
+      "description": "Entrega en PDF con bibliografía en formato APA sobre los movimientos sociales.",
+      "type": "project",
+      "dueDate": "2026-10-15",
+      "dueTime": "23:59",
+      "priority": "media",
+      "status": "en_proceso",
+      "hasReminder": true,
+      "createdBy": "usr-teacher-1",
+      "createdAt": "2026-10-02T12:00:00.000Z",
+      "updatedAt": "2026-10-02T12:00:00.000Z"
+    },
+    {
+      "id": "tsk-3",
+      "subjectId": "subj-2",
+      "studentId": "usr-student-1",
+      "title": "Tarea de Física - Leyes de Newton y Termodinámica",
+      "description": "Problemas del capítulo 4, ejercicios 1 al 12 en cuaderno de trabajo.",
+      "type": "task",
+      "dueDate": "2026-10-10",
+      "dueTime": "10:00",
+      "priority": "alta",
+      "status": "pendiente",
+      "hasReminder": true,
+      "createdBy": "usr-teacher-1",
+      "createdAt": "2026-10-04T09:00:00.000Z",
+      "updatedAt": "2026-10-04T09:00:00.000Z"
+    },
+    {
+      "id": "tsk-4",
+      "subjectId": "subj-4",
+      "studentId": "usr-student-1",
+      "title": "Reporte de Práctica de Laboratorio 3",
+      "description": "Síntesis y destilación de compuestos aromáticos.",
+      "type": "task",
+      "dueDate": "2026-10-08",
+      "dueTime": "13:00",
+      "priority": "media",
+      "status": "completada",
+      "hasReminder": false,
+      "createdBy": "usr-teacher-1",
+      "createdAt": "2026-09-28T09:00:00.000Z",
+      "updatedAt": "2026-10-07T16:30:00.000Z"
+    }
+  ],
+  "grades": [
+    {
+      "id": "grd-1",
+      "subjectId": "subj-1",
+      "studentId": "usr-student-1",
+      "evaluationName": "Tarea 1: Límites algebraicos",
+      "score": 92,
+      "maxScore": 100,
+      "percentage": 15,
+      "feedback": "Excelente desarrollo analítico.",
+      "date": "2026-09-15"
+    },
+    {
+      "id": "grd-2",
+      "subjectId": "subj-1",
+      "studentId": "usr-student-1",
+      "evaluationName": "Tarea 2: Continuidad y asíntotas",
+      "score": 88,
+      "maxScore": 100,
+      "percentage": 15,
+      "feedback": "Cuidado con los signos al factorizar en el paso 3.",
+      "date": "2026-09-22"
+    },
+    {
+      "id": "grd-3",
+      "subjectId": "subj-1",
+      "studentId": "usr-student-1",
+      "evaluationName": "Primer Examen Parcial",
+      "score": 85,
+      "maxScore": 100,
+      "percentage": 30,
+      "feedback": "Buen desempeño general.",
+      "date": "2026-09-29"
+    },
+    {
+      "id": "grd-4",
+      "subjectId": "subj-2",
+      "studentId": "usr-student-1",
+      "evaluationName": "Práctica de Cinemática",
+      "score": 95,
+      "maxScore": 100,
+      "percentage": 20,
+      "feedback": "Gráficas experimentales muy claras.",
+      "date": "2026-09-18"
+    },
+    {
+      "id": "grd-5",
+      "subjectId": "subj-3",
+      "studentId": "usr-student-1",
+      "evaluationName": "Control de Lectura 1",
+      "score": 90,
+      "maxScore": 100,
+      "percentage": 20,
+      "feedback": "Buen pensamiento crítico y argumentación.",
+      "date": "2026-09-20"
+    }
+  ],
+  "emotionalRecords": [
+    {
+      "id": "emo-1",
+      "studentId": "usr-student-1",
+      "mood": "estresado",
+      "moodScore": 2,
+      "reasonCategory": "Exámenes y carga académica",
+      "note": "Tengo tres entregas esta semana y siento que el tiempo no me rinde.",
+      "date": "2026-10-06",
+      "createdAt": "2026-10-06T18:30:00.000Z"
+    },
+    {
+      "id": "emo-2",
+      "studentId": "usr-student-1",
+      "mood": "preocupado",
+      "moodScore": 3,
+      "reasonCategory": "Física y Matemáticas",
+      "note": "Estudié cálculo pero todavía dudo en las derivadas implícitas.",
+      "date": "2026-10-07",
+      "createdAt": "2026-10-07T20:15:00.000Z"
+    },
+    {
+      "id": "emo-3",
+      "studentId": "usr-student-1",
+      "mood": "bien",
+      "moodScore": 6,
+      "reasonCategory": "Avance de proyectos",
+      "note": "Pude terminar el reporte de química a tiempo y me siento más aliviado.",
+      "date": "2026-10-08",
+      "createdAt": "2026-10-08T19:40:00.000Z"
+    }
+  ],
+  "wellnessResources": [
+    {
+      "id": "res-1",
+      "title": "Técnica de Respiración 4-7-8",
+      "category": "Respiración",
+      "durationMinutes": 3,
+      "type": "ejercicio",
+      "summary": "Una técnica comprobada para calmar el sistema nervioso en momentos de ansiedad o tensión.",
+      "content": "La respiración 4-7-8 actúa como un sedante natural para el sistema nervioso simpático. Practícala sentado con la espalda recta.",
+      "steps": [
+        "Inhala silenciosamente por la nariz durante 4 segundos.",
+        "Retén el aire en los pulmones con calma durante 7 segundos.",
+        "Exhala por la boca haciendo un suave sonido durante 8 segundos.",
+        "Repite el ciclo 4 veces consecutivas."
+      ]
+    },
+    {
+      "id": "res-2",
+      "title": "Método Pomodoro para Tareas Grandes",
+      "category": "Organización",
+      "durationMinutes": 5,
+      "type": "tecnica",
+      "summary": "Divide actividades abrumadoras en bloques manejables de 25 minutos con descansos intencionales.",
+      "content": "La procrastinación suele surgir cuando una tarea se percibe como gigantesca. Al enfocarte en 25 minutos sin distracciones, tu cerebro reduce la resistencia.",
+      "steps": [
+        "Elige una sola tarea prioritaria.",
+        "Pon un temporizador de 25 minutos y silencia notificaciones.",
+        "Trabaja enfocado hasta que suene el temporizador.",
+        "Tómate un descanso absoluto de 5 minutos (estírate, bebe agua).",
+        "Cada 4 bloques, realiza un descanso mayor de 20 minutos."
+      ]
+    },
+    {
+      "id": "res-3",
+      "title": "Qué hacer 24 horas antes de un examen",
+      "category": "Exámenes",
+      "durationMinutes": 7,
+      "type": "guia",
+      "summary": "Estrategias para consolidar conocimiento sin desgastarte ni pasar noches sin dormir.",
+      "content": "Estudiar toda la madrugada previa a un examen disminuye tu rendimiento cognitivo hasta un 40%. La memoria se consolida durante el sueño REM.",
+      "steps": [
+        "Detén el estudio pesado al menos 3 horas antes de acostarte.",
+        "Prepara con anticipación tus materiales, identificación y calculadora.",
+        "Realiza un repaso ligero de conceptos clave o fichas mnemotécnicas.",
+        "Duerme un mínimo de 7 horas consecutivas.",
+        "Desayuna alimentos balanceados con bajo índice glucémico."
+      ]
+    },
+    {
+      "id": "res-4",
+      "title": "Anclaje Sensorial 5-4-3-2-1 para Ansiedad",
+      "category": "Ansiedad",
+      "durationMinutes": 4,
+      "type": "ejercicio",
+      "summary": "Regresa al momento presente cuando los pensamientos catastróficos tomen el control.",
+      "content": "El anclaje sensorial redirige la atención de la corteza prefrontal hacia los estímulos físicos inmediatos.",
+      "steps": [
+        "Nombra 5 cosas que puedas VER a tu alrededor.",
+        "Identifica 4 cosas que puedas TOCAR o sentir en tu cuerpo.",
+        "Detecta 3 sonidos que puedas OÍR en el entorno.",
+        "Identifica 2 olores que puedas PERCIBIR.",
+        "Identifica 1 sabor o sensación en tu boca."
+      ]
+    },
+    {
+      "id": "res-5",
+      "title": "Higiene del Sueño para Rendimiento Académico",
+      "category": "Descanso",
+      "durationMinutes": 6,
+      "type": "guia",
+      "summary": "Cómo programar tus hábitos nocturnos para despertar despejado y retener mejor.",
+      "content": "La luz azul de pantallas inhibe la melatonina. Aprende a desconectar para dormir profundamente.",
+      "steps": [
+        "Evita cafeína después de las 4:00 PM.",
+        "Activa el filtro de luz cálida en dispositivos móviles.",
+        "Deja el teléfono lejos de la cabecera 30 minutos antes de dormir.",
+        "Mantén una temperatura fresca en tu habitación."
+      ]
+    },
+    {
+      "id": "res-6",
+      "title": "Manejo del Tiempo: Matriz Eisenhower",
+      "category": "Manejo del tiempo",
+      "durationMinutes": 8,
+      "type": "tecnica",
+      "summary": "Aprende a diferenciar lo urgente de lo verdaderamente importante.",
+      "content": "No todo lo que grita en tu agenda requiere tu energía inmediata. Clasifica tus entregas.",
+      "steps": [
+        "Urgente e Importante: Hazlo de inmediato (exámenes cercanos, entregas de hoy).",
+        "Importante pero No Urgente: Agenda bloques con anticipación (proyectos a largo plazo).",
+        "Urgente pero No Importante: Simplifica o automatiza.",
+        "Ni Urgente ni Importante: Elimina o reduce (redes sociales excesivas)."
+      ]
+    }
+  ],
+  "counselingRequests": [
+    {
+      "id": "csl-1791564880626",
+      "studentId": "usr-student-1",
+      "teacherId": "usr-teacher-1",
+      "subjectId": "subj-1",
+      "groupId": "grp-3a",
+      "type": "asesoria_academica",
+      "subject": "Matemáticas III (Cálculo)",
+      "reason": "Solicitud enviada mediante el botón rápido de ayuda institucional.",
+      "preferredDate": "2026-10-09",
+      "preferredTime": "12:00",
+      "modality": "presencial",
+      "status": "pendiente",
+      "createdAt": "2026-10-09T16:54:40.626Z"
+    },
+    {
+      "id": "csl-1791564866159",
+      "studentId": "usr-student-1",
+      "teacherId": "usr-teacher-1",
+      "subjectId": "subj-1",
+      "groupId": "grp-3a",
+      "type": "asesoria_academica",
+      "subject": "Matemáticas III (Cálculo)",
+      "reason": "Solicitud enviada mediante el botón rápido de ayuda institucional.",
+      "preferredDate": "2026-10-09",
+      "preferredTime": "12:00",
+      "modality": "presencial",
+      "status": "pendiente",
+      "createdAt": "2026-10-09T16:54:26.159Z"
+    },
+    {
+      "id": "csl-1791564854279",
+      "studentId": "usr-student-1",
+      "psychologistId": "usr-psych-1",
+      "groupId": "grp-3a",
+      "type": "orientacion_psicologica",
+      "subject": "Orientación prioritaria de bienestar",
+      "reason": "Solicitud enviada mediante el botón rápido de ayuda institucional.",
+      "preferredDate": "2026-10-09",
+      "preferredTime": "12:00",
+      "modality": "presencial",
+      "status": "pendiente",
+      "createdAt": "2026-10-09T16:54:14.279Z"
+    },
+    {
+      "id": "csl-1791564846892",
+      "studentId": "usr-student-1",
+      "teacherId": "usr-teacher-1",
+      "subjectId": "subj-1",
+      "groupId": "grp-3a",
+      "type": "asesoria_academica",
+      "subject": "Matemáticas III (Cálculo)",
+      "reason": "Solicitud enviada mediante el botón rápido de ayuda institucional.",
+      "preferredDate": "2026-10-09",
+      "preferredTime": "12:00",
+      "modality": "presencial",
+      "status": "pendiente",
+      "createdAt": "2026-10-09T16:54:06.892Z"
+    },
+    {
+      "id": "csl-1791564825952",
+      "studentId": "usr-teacher-1",
+      "teacherId": "usr-teacher-1",
+      "subjectId": "subj-1",
+      "groupId": "grp-3a",
+      "type": "asesoria_academica",
+      "subject": "Matemáticas III (Cálculo)",
+      "reason": "Solicitud enviada mediante el botón rápido de ayuda institucional.",
+      "preferredDate": "2026-10-09",
+      "preferredTime": "12:00",
+      "modality": "presencial",
+      "status": "pendiente",
+      "createdAt": "2026-10-09T16:53:45.952Z"
+    },
+    {
+      "id": "csl-1791564821300",
+      "studentId": "usr-teacher-1",
+      "psychologistId": "usr-psych-1",
+      "type": "orientacion_psicologica",
+      "subject": "Orientación prioritaria de bienestar",
+      "reason": "Solicitud enviada mediante el botón rápido de ayuda institucional.",
+      "preferredDate": "2026-10-09",
+      "preferredTime": "12:00",
+      "modality": "presencial",
+      "status": "pendiente",
+      "createdAt": "2026-10-09T16:53:41.301Z"
+    },
+    {
+      "id": "csl-1791564806205",
+      "studentId": "usr-teacher-1",
+      "teacherId": "usr-teacher-1",
+      "subjectId": "subj-1",
+      "groupId": "grp-3a",
+      "type": "asesoria_academica",
+      "subject": "Matemáticas III (Cálculo)",
+      "reason": "Solicitud enviada mediante el botón rápido de ayuda institucional.",
+      "preferredDate": "2026-10-09",
+      "preferredTime": "12:00",
+      "modality": "presencial",
+      "status": "pendiente",
+      "createdAt": "2026-10-09T16:53:26.205Z"
+    },
+    {
+      "id": "csl-1791564347622",
+      "studentId": "usr-teacher-1",
+      "teacherId": "usr-teacher-1",
+      "subjectId": "subj-1",
+      "groupId": "grp-3a",
+      "type": "asesoria_academica",
+      "subject": "Matemáticas III (Cálculo)",
+      "reason": "Solicitud enviada mediante el botón rápido de ayuda institucional.",
+      "preferredDate": "2026-10-09",
+      "preferredTime": "12:00",
+      "modality": "presencial",
+      "status": "pendiente",
+      "createdAt": "2026-10-09T16:45:47.622Z"
+    },
+    {
+      "id": "csl-1791556740512",
+      "studentId": "usr-student-1",
+      "teacherId": "usr-teacher-1",
+      "subjectId": "subj-1",
+      "groupId": "grp-3a",
+      "type": "asesoria_academica",
+      "subject": "Matemáticas III (Cálculo)",
+      "reason": "Dudas que ya resolví",
+      "preferredDate": "2026-10-22",
+      "preferredTime": "09:00",
+      "modality": "presencial",
+      "status": "cancelada",
+      "createdAt": "2026-10-09T14:39:00.512Z",
+      "cancellationReason": "Ya resolví el ejercicio con el libro.",
+      "updatedAt": "2026-10-09T14:39:00.517Z"
+    },
+    {
+      "id": "csl-1791556740503",
+      "studentId": "usr-student-1",
+      "teacherId": "usr-teacher-1",
+      "subjectId": "subj-2",
+      "groupId": "grp-3a",
+      "type": "asesoria_academica",
+      "subject": "Física General",
+      "reason": "Preparación para el examen",
+      "preferredDate": "2026-10-21",
+      "preferredTime": "12:00",
+      "modality": "virtual",
+      "status": "rechazada",
+      "createdAt": "2026-10-09T14:39:00.503Z",
+      "rejectionReason": "Carga horaria saturada por exámenes.",
+      "updatedAt": "2026-10-09T14:39:00.508Z"
+    },
+    {
+      "id": "csl-1791556740494",
+      "studentId": "usr-student-1",
+      "teacherId": "usr-teacher-1",
+      "subjectId": "subj-1",
+      "groupId": "grp-3a",
+      "type": "asesoria_academica",
+      "subject": "Matemáticas III (Cálculo)",
+      "reason": "Duda en cálculo integral",
+      "preferredDate": "2026-10-20",
+      "preferredTime": "10:00",
+      "modality": "presencial",
+      "status": "completada",
+      "createdAt": "2026-10-09T14:39:00.494Z",
+      "notes": "Sesión completada con éxito. Excelente comprensión.",
+      "updatedAt": "2026-10-09T14:39:00.498Z"
+    },
+    {
+      "id": "csl-1791556729730",
+      "studentId": "usr-student-1",
+      "teacherId": "usr-teacher-1",
+      "subjectId": "subj-2",
+      "groupId": "grp-3a",
+      "type": "asesoria_academica",
+      "subject": "Física General",
+      "reason": "Dudas con el ejercicio de momento de inercia y conservación del momento angular.",
+      "preferredDate": "2026-10-18",
+      "preferredTime": "11:30",
+      "modality": "presencial",
+      "status": "aceptada",
+      "createdAt": "2026-10-09T14:38:49.730Z",
+      "scheduledDate": "2026-10-19",
+      "scheduledTime": "14:00",
+      "notes": "Se empalmó junta departamental, propongo el lunes a las 14:00.\nEl estudiante aceptó la propuesta de horario.",
+      "updatedAt": "2026-10-09T14:38:49.757Z",
+      "proposedDate": "2026-10-19",
+      "proposedTime": "14:00"
+    },
+    {
+      "id": "csl-1791556711593",
+      "studentId": "usr-student-1",
+      "type": "asesoria_academica",
+      "subject": "Física General",
+      "reason": "Dudas con el ejercicio de momento de inercia y conservación del momento angular.",
+      "preferredDate": "2026-10-18",
+      "preferredTime": "11:30",
+      "modality": "presencial",
+      "status": "pendiente",
+      "createdAt": "2026-10-09T14:38:31.593Z"
+    },
+    {
+      "id": "csl-1791555496465",
+      "studentId": "usr-student-1",
+      "type": "asesoria_academica",
+      "subject": "fisica",
+      "reason": "no le entiendo los conceptos de la optica",
+      "preferredDate": "2026-10-09",
+      "preferredTime": "11:00",
+      "modality": "virtual",
+      "status": "pendiente",
+      "createdAt": "2026-10-09T14:18:16.465Z"
+    },
+    {
+      "id": "csl-1791555435316",
+      "studentId": "usr-student-1",
+      "type": "asesoria_academica",
+      "subject": "Asesoría de urgencia académica",
+      "reason": "Solicitud enviada mediante el botón rápido de ayuda institucional.",
+      "preferredDate": "2026-10-09",
+      "preferredTime": "12:00",
+      "modality": "presencial",
+      "status": "pendiente",
+      "createdAt": "2026-10-09T14:17:15.316Z"
+    },
+    {
+      "id": "csl-1791555425041",
+      "studentId": "usr-student-1",
+      "type": "orientacion_psicologica",
+      "subject": "Orientación prioritaria",
+      "reason": "Solicitud enviada mediante el botón rápido de ayuda institucional.",
+      "preferredDate": "2026-10-09",
+      "preferredTime": "12:00",
+      "modality": "presencial",
+      "status": "pendiente",
+      "createdAt": "2026-10-09T14:17:05.041Z"
+    },
+    {
+      "id": "csl-1791555412370",
+      "studentId": "usr-student-1",
+      "type": "orientacion_psicologica",
+      "subject": "Orientación prioritaria",
+      "reason": "Solicitud enviada mediante el botón rápido de ayuda institucional.",
+      "preferredDate": "2026-10-09",
+      "preferredTime": "12:00",
+      "modality": "presencial",
+      "status": "pendiente",
+      "createdAt": "2026-10-09T14:16:52.370Z"
+    },
+    {
+      "id": "csl-1",
+      "studentId": "usr-student-1",
+      "psychologistId": "usr-psych-1",
+      "type": "orientacion_psicologica",
+      "subject": "Manejo de ansiedad ante exámenes de cálculo",
+      "reason": "Siento bloqueos mentales cuando inicio los exámenes parciales a pesar de haber estudiado.",
+      "preferredDate": "2026-10-14",
+      "preferredTime": "11:00",
+      "modality": "presencial",
+      "status": "confirmada",
+      "scheduledDate": "2026-10-14",
+      "scheduledTime": "11:00",
+      "notes": "Confirmada cita presencial en Cubículo de Orientación 3.",
+      "createdAt": "2026-10-05T11:20:00.000Z"
+    },
+    {
+      "id": "csl-2",
+      "studentId": "usr-student-1",
+      "type": "asesoria_academica",
+      "subject": "Dudas en Física - Dinámica rotacional",
+      "reason": "Necesito apoyo en la resolución de problemas para la práctica de laboratorio.",
+      "preferredDate": "2026-10-16",
+      "preferredTime": "14:00",
+      "modality": "virtual",
+      "status": "pendiente",
+      "createdAt": "2026-10-08T15:00:00.000Z"
+    }
+  ],
+  "groupMessages": [
+    {
+      "id": "msg-1",
+      "subjectId": "subj-1",
+      "senderId": "usr-teacher-1",
+      "senderName": "Prof. Roberto Silva",
+      "senderRole": "teacher",
+      "content": "Jóvenes, recuerden que la guía de ejercicios para el examen ya está disponible en biblioteca y se resolverán dudas en la clase del miércoles.",
+      "createdAt": "2026-10-07T09:15:00.000Z"
+    },
+    {
+      "id": "msg-2",
+      "subjectId": "subj-1",
+      "senderId": "usr-student-1",
+      "senderName": "Carlos Mendoza",
+      "senderRole": "student",
+      "content": "Profesor, ¿podríamos llevar formulario impreso propio o se proporcionará en el examen?",
+      "createdAt": "2026-10-07T09:40:00.000Z"
+    },
+    {
+      "id": "msg-3",
+      "subjectId": "subj-1",
+      "senderId": "usr-teacher-1",
+      "senderName": "Prof. Roberto Silva",
+      "senderRole": "teacher",
+      "content": "Se proporcionará el formulario oficial institucional en la primera hoja del examen.",
+      "createdAt": "2026-10-07T10:05:00.000Z"
+    },
+    {
+      "id": "msg-1791554100420",
+      "subjectId": "subj-1",
+      "senderId": "usr-student-1",
+      "senderName": "Carlos Mendoza",
+      "senderRole": "student",
+      "content": "profesor, ¿tenemos que ir con vestimenta formal?",
+      "createdAt": "2026-10-09T13:55:00.420Z"
+    }
+  ],
+  "announcements": [
+    {
+      "id": "anc-2",
+      "title": "Aviso Importante: Fecha límite de entrega de proyectos parciales",
+      "content": "Se recuerda a todos los docentes y alumnos que el cierre de calificaciones del primer corte es el 25 de octubre.",
+      "authorId": "usr-admin-1",
+      "authorName": "Dra. Elena Ramos",
+      "targetRole": "all",
+      "isOfficial": true,
+      "createdAt": "2026-10-05T09:30:00.000Z"
+    },
+    {
+      "id": "anc-1",
+      "title": "Semana de Bienestar Estudiantil y Talleres Anti-Estrés",
+      "content": "Del 20 al 24 de octubre tendremos charlas de gestión emocional, meditación guiada y asesorías académicas abiertas en el auditorio central.",
+      "authorId": "usr-admin-1",
+      "authorName": "Dra. Elena Ramos (Dirección)",
+      "targetRole": "all",
+      "isOfficial": true,
+      "createdAt": "2026-10-02T08:00:00.000Z"
+    }
+  ],
+  "evaluations": [
+    {
+      "id": "eval-1",
+      "subjectId": "subj-1",
+      "teacherId": "usr-teacher-1",
+      "clarity": 88,
+      "organization": 90,
+      "communication": 86,
+      "treatment": 92,
+      "overall": 89,
+      "comment": "Explica con mucha paciencia los pasos del cálculo diferencial y resuelve dudas de forma respetuosa.",
+      "createdAt": "2026-09-30T14:00:00.000Z"
+    },
+    {
+      "id": "eval-2",
+      "subjectId": "subj-2",
+      "teacherId": "usr-teacher-1",
+      "clarity": 82,
+      "organization": 84,
+      "communication": 85,
+      "treatment": 88,
+      "overall": 85,
+      "comment": "Las prácticas de laboratorio ayudan mucho a entender los conceptos.",
+      "createdAt": "2026-09-29T11:20:00.000Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "aud-1791564840575-rd5b",
+      "userId": "usr-student-1",
+      "userName": "Carlos Mendoza",
+      "role": "student",
+      "action": "CAMBIO_DEMO_ROL",
+      "details": "Cambio interactivo a rol student",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-10-09T16:54:00.575Z"
+    },
+    {
+      "id": "aud-1791564288534-ynw1",
+      "userId": "usr-teacher-1",
+      "userName": "Prof. Roberto Silva",
+      "role": "teacher",
+      "action": "CAMBIO_DEMO_ROL",
+      "details": "Cambio interactivo a rol teacher",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-10-09T16:44:48.534Z"
+    },
+    {
+      "id": "aud-1791564212397-62nz",
+      "userId": "usr-student-1",
+      "userName": "Carlos Mendoza",
+      "role": "student",
+      "action": "CAMBIO_DEMO_ROL",
+      "details": "Cambio interactivo a rol student",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-10-09T16:43:32.397Z"
+    },
+    {
+      "id": "aud-1791563588078-732v",
+      "userId": "usr-student-1",
+      "userName": "Carlos Mendoza",
+      "role": "student",
+      "action": "CAMBIO_DEMO_ROL",
+      "details": "Cambio interactivo a rol student",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-10-09T16:33:08.078Z"
+    },
+    {
+      "id": "aud-1791556740489-co2d",
+      "userId": "usr-teacher-1",
+      "userName": "Prof. Roberto Silva",
+      "role": "teacher",
+      "action": "INICIO_SESION",
+      "details": "Inicio de sesión con contraseña",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-10-09T14:39:00.489Z"
+    },
+    {
+      "id": "aud-1791556740478-uysm",
+      "userId": "usr-student-1",
+      "userName": "Carlos Mendoza",
+      "role": "student",
+      "action": "INICIO_SESION",
+      "details": "Inicio de sesión con contraseña",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-10-09T14:39:00.478Z"
+    },
+    {
+      "id": "aud-1791556729734-2s58",
+      "userId": "usr-teacher-1",
+      "userName": "Prof. Roberto Silva",
+      "role": "teacher",
+      "action": "INICIO_SESION",
+      "details": "Inicio de sesión con contraseña",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-10-09T14:38:49.734Z"
+    },
+    {
+      "id": "aud-1791556729715-vfer",
+      "userId": "usr-student-1",
+      "userName": "Carlos Mendoza",
+      "role": "student",
+      "action": "INICIO_SESION",
+      "details": "Inicio de sesión con contraseña",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-10-09T14:38:49.715Z"
+    },
+    {
+      "id": "aud-1791556711598-zxbd",
+      "userId": "usr-teacher-1",
+      "userName": "Prof. Roberto Silva",
+      "role": "teacher",
+      "action": "INICIO_SESION",
+      "details": "Inicio de sesión con contraseña",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-10-09T14:38:31.598Z"
+    },
+    {
+      "id": "aud-1791556711581-5rox",
+      "userId": "usr-student-1",
+      "userName": "Carlos Mendoza",
+      "role": "student",
+      "action": "INICIO_SESION",
+      "details": "Inicio de sesión con contraseña",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-10-09T14:38:31.581Z"
+    },
+    {
+      "id": "aud-1791555734560-o2tm",
+      "userId": "usr-teacher-1",
+      "userName": "Prof. Roberto Silva",
+      "role": "teacher",
+      "action": "CAMBIO_DEMO_ROL",
+      "details": "Cambio interactivo a rol teacher",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-10-09T14:22:14.560Z"
+    },
+    {
+      "id": "aud-1791555733248-x6vl",
+      "userId": "usr-student-1",
+      "userName": "Carlos Mendoza",
+      "role": "student",
+      "action": "CAMBIO_DEMO_ROL",
+      "details": "Cambio interactivo a rol student",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-10-09T14:22:13.248Z"
+    },
+    {
+      "id": "aud-1791555655515-qv4a",
+      "userId": "usr-admin-1",
+      "userName": "Dra. Elena Ramos",
+      "role": "admin",
+      "action": "CAMBIO_DEMO_ROL",
+      "details": "Cambio interactivo a rol admin",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-10-09T14:20:55.515Z"
+    },
+    {
+      "id": "aud-1791555609366-ghi9",
+      "userId": "usr-psych-1",
+      "userName": "Lic. Mariana Gómez",
+      "role": "psychologist",
+      "action": "CAMBIO_DEMO_ROL",
+      "details": "Cambio interactivo a rol psychologist",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-10-09T14:20:09.366Z"
+    },
+    {
+      "id": "aud-1791555499565-lzpz",
+      "userId": "usr-teacher-1",
+      "userName": "Prof. Roberto Silva",
+      "role": "teacher",
+      "action": "CAMBIO_DEMO_ROL",
+      "details": "Cambio interactivo a rol teacher",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-10-09T14:18:19.565Z"
+    },
+    {
+      "id": "aud-1791555347573-f3e5",
+      "userId": "usr-student-1",
+      "userName": "Carlos Mendoza",
+      "role": "student",
+      "action": "CAMBIO_DEMO_ROL",
+      "details": "Cambio interactivo a rol student",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-10-09T14:15:47.573Z"
+    },
+    {
+      "id": "aud-1791555280150-b5pe",
+      "userId": "usr-admin-1",
+      "userName": "Dra. Elena Ramos",
+      "role": "admin",
+      "action": "CAMBIO_DEMO_ROL",
+      "details": "Cambio interactivo a rol admin",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-10-09T14:14:40.150Z"
+    },
+    {
+      "id": "aud-1791555224675-1od5",
+      "userId": "usr-psych-1",
+      "userName": "Lic. Mariana Gómez",
+      "role": "psychologist",
+      "action": "CAMBIO_DEMO_ROL",
+      "details": "Cambio interactivo a rol psychologist",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-10-09T14:13:44.675Z"
+    },
+    {
+      "id": "aud-1791555094261",
+      "userId": "usr-admin-1",
+      "userName": "Dra. Elena Ramos",
+      "role": "admin",
+      "action": "CREACION_GRUPO",
+      "details": "Grupo 3° Semestre - Grupo C creado.",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-10-09T14:11:34.261Z"
+    },
+    {
+      "id": "aud-1791555068952-57ij",
+      "userId": "usr-teacher-1",
+      "userName": "Prof. Roberto Silva",
+      "role": "teacher",
+      "action": "CAMBIO_DEMO_ROL",
+      "details": "Cambio interactivo a rol teacher",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-10-09T14:11:08.952Z"
+    },
+    {
+      "id": "aud-1791555066608-hmub",
+      "userId": "usr-teacher-1",
+      "userName": "Prof. Roberto Silva",
+      "role": "teacher",
+      "action": "CAMBIO_DEMO_ROL",
+      "details": "Cambio interactivo a rol teacher",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-10-09T14:11:06.608Z"
+    },
+    {
+      "id": "aud-1791554539342-jf10",
+      "userId": "usr-admin-1",
+      "userName": "Dra. Elena Ramos",
+      "role": "admin",
+      "action": "CAMBIO_DEMO_ROL",
+      "details": "Cambio interactivo a rol admin",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-10-09T14:02:19.342Z"
+    },
+    {
+      "id": "aud-1791554471552-g0wg",
+      "userId": "usr-psych-1",
+      "userName": "Lic. Mariana Gómez",
+      "role": "psychologist",
+      "action": "CAMBIO_DEMO_ROL",
+      "details": "Cambio interactivo a rol psychologist",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-10-09T14:01:11.552Z"
+    },
+    {
+      "id": "aud-1791554341670-yyqu",
+      "userId": "usr-teacher-1",
+      "userName": "Prof. Roberto Silva",
+      "role": "teacher",
+      "action": "CAMBIO_DEMO_ROL",
+      "details": "Cambio interactivo a rol teacher",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-10-09T13:59:01.671Z"
+    },
+    {
+      "id": "aud-1791554288971-il0s",
+      "userId": "usr-admin-1",
+      "userName": "Dra. Elena Ramos",
+      "role": "admin",
+      "action": "CAMBIO_DEMO_ROL",
+      "details": "Cambio interactivo a rol admin",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-10-09T13:58:08.971Z"
+    },
+    {
+      "id": "aud-1791554206815-yy5j",
+      "userId": "usr-psych-1",
+      "userName": "Lic. Mariana Gómez",
+      "role": "psychologist",
+      "action": "CAMBIO_DEMO_ROL",
+      "details": "Cambio interactivo a rol psychologist",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-10-09T13:56:46.815Z"
+    },
+    {
+      "id": "aud-1791554134935-vzze",
+      "userId": "usr-teacher-1",
+      "userName": "Prof. Roberto Silva",
+      "role": "teacher",
+      "action": "CAMBIO_DEMO_ROL",
+      "details": "Cambio interactivo a rol teacher",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-10-09T13:55:34.935Z"
+    },
+    {
+      "id": "aud-1791553881016-dbrb",
+      "userId": "usr-student-1",
+      "userName": "Carlos Mendoza",
+      "role": "student",
+      "action": "CAMBIO_DEMO_ROL",
+      "details": "Cambio interactivo a rol student",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-10-09T13:51:21.016Z"
+    },
+    {
+      "id": "aud-1791553849790-adb3",
+      "userId": "usr-student-1",
+      "userName": "Carlos Mendoza",
+      "role": "student",
+      "action": "INICIO_SESION",
+      "details": "Inicio de sesión con contraseña",
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-10-09T13:50:49.790Z"
+    },
+    {
+      "id": "aud-1",
+      "userId": "usr-admin-1",
+      "userName": "Dra. Elena Ramos",
+      "role": "admin",
+      "action": "INICIO_SESION",
+      "details": "Inicio de sesión exitoso en panel administrativo.",
+      "ipAddress": "192.168.1.10",
+      "createdAt": "2026-10-09T05:30:00.000Z"
+    },
+    {
+      "id": "aud-2",
+      "userId": "usr-teacher-1",
+      "userName": "Prof. Roberto Silva",
+      "role": "teacher",
+      "action": "PUBLICACION_CALIFICACION",
+      "details": "Registro de calificaciones para Materia MAT-301.",
+      "ipAddress": "192.168.1.25",
+      "createdAt": "2026-10-07T12:10:00.000Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-1791564880626-usr-teacher-1",
+      "userId": "usr-teacher-1",
+      "title": "Nueva solicitud de asesoría",
+      "message": "Carlos Mendoza solicitó asesoría para \"Matemáticas III (Cálculo)\" (2026-10-09 a las 12:00).",
+      "type": "info",
+      "read": false,
+      "createdAt": "2026-10-09T16:54:40.626Z"
+    },
+    {
+      "id": "notif-1791564866159-usr-teacher-1",
+      "userId": "usr-teacher-1",
+      "title": "Nueva solicitud de asesoría",
+      "message": "Carlos Mendoza solicitó asesoría para \"Matemáticas III (Cálculo)\" (2026-10-09 a las 12:00).",
+      "type": "info",
+      "read": false,
+      "createdAt": "2026-10-09T16:54:26.159Z"
+    },
+    {
+      "id": "notif-1791564854279-usr-psych-1",
+      "userId": "usr-psych-1",
+      "title": "Nueva solicitud de orientación",
+      "message": "Carlos Mendoza solicitó orientación psicológica para el 2026-10-09.",
+      "type": "info",
+      "read": false,
+      "createdAt": "2026-10-09T16:54:14.279Z"
+    },
+    {
+      "id": "notif-1791564846892-usr-teacher-1",
+      "userId": "usr-teacher-1",
+      "title": "Nueva solicitud de asesoría",
+      "message": "Carlos Mendoza solicitó asesoría para \"Matemáticas III (Cálculo)\" (2026-10-09 a las 12:00).",
+      "type": "info",
+      "read": false,
+      "createdAt": "2026-10-09T16:54:06.892Z"
+    },
+    {
+      "id": "notif-1791564825952-usr-teacher-1",
+      "userId": "usr-teacher-1",
+      "title": "Nueva solicitud de asesoría",
+      "message": "Prof. Roberto Silva solicitó asesoría para \"Matemáticas III (Cálculo)\" (2026-10-09 a las 12:00).",
+      "type": "info",
+      "read": false,
+      "createdAt": "2026-10-09T16:53:45.952Z"
+    },
+    {
+      "id": "notif-1791564821301-usr-psych-1",
+      "userId": "usr-psych-1",
+      "title": "Nueva solicitud de orientación",
+      "message": "Prof. Roberto Silva solicitó orientación psicológica para el 2026-10-09.",
+      "type": "info",
+      "read": false,
+      "createdAt": "2026-10-09T16:53:41.301Z"
+    },
+    {
+      "id": "notif-1791564806205-usr-teacher-1",
+      "userId": "usr-teacher-1",
+      "title": "Nueva solicitud de asesoría",
+      "message": "Prof. Roberto Silva solicitó asesoría para \"Matemáticas III (Cálculo)\" (2026-10-09 a las 12:00).",
+      "type": "info",
+      "read": false,
+      "createdAt": "2026-10-09T16:53:26.205Z"
+    },
+    {
+      "id": "notif-1791564347622-usr-teacher-1",
+      "userId": "usr-teacher-1",
+      "title": "Nueva solicitud de asesoría",
+      "message": "Prof. Roberto Silva solicitó asesoría para \"Matemáticas III (Cálculo)\" (2026-10-09 a las 12:00).",
+      "type": "info",
+      "read": false,
+      "createdAt": "2026-10-09T16:45:47.622Z"
+    },
+    {
+      "id": "notif-1791556740517-usr-teacher-1",
+      "userId": "usr-teacher-1",
+      "title": "Asesoría cancelada por estudiante",
+      "message": "Carlos Mendoza canceló la solicitud para Matemáticas III (Cálculo). Motivo: Ya resolví el ejercicio con el libro.",
+      "type": "warning",
+      "read": false,
+      "createdAt": "2026-10-09T14:39:00.517Z"
+    },
+    {
+      "id": "notif-1791556740512-usr-teacher-1",
+      "userId": "usr-teacher-1",
+      "title": "Nueva solicitud de asesoría",
+      "message": "Carlos Mendoza solicitó asesoría para \"Matemáticas III (Cálculo)\" (2026-10-22 a las 09:00).",
+      "type": "info",
+      "read": false,
+      "createdAt": "2026-10-09T14:39:00.512Z"
+    },
+    {
+      "id": "notif-1791556740508-usr-student-1",
+      "userId": "usr-student-1",
+      "title": "Asesoría no aceptada",
+      "message": "Tu solicitud de Física General fue rechazada. Motivo: Carga horaria saturada por exámenes..",
+      "type": "warning",
+      "read": false,
+      "createdAt": "2026-10-09T14:39:00.508Z"
+    },
+    {
+      "id": "notif-1791556740503-usr-teacher-1",
+      "userId": "usr-teacher-1",
+      "title": "Nueva solicitud de asesoría",
+      "message": "Carlos Mendoza solicitó asesoría para \"Física General\" (2026-10-21 a las 12:00).",
+      "type": "info",
+      "read": false,
+      "createdAt": "2026-10-09T14:39:00.503Z"
+    },
+    {
+      "id": "notif-1791556740498-usr-student-1",
+      "userId": "usr-student-1",
+      "title": "Asesoría completada",
+      "message": "Tu asesoría de Matemáticas III (Cálculo) ha sido marcada como completada.",
+      "type": "info",
+      "read": false,
+      "createdAt": "2026-10-09T14:39:00.498Z"
+    },
+    {
+      "id": "notif-1791556740494-usr-teacher-1",
+      "userId": "usr-teacher-1",
+      "title": "Nueva solicitud de asesoría",
+      "message": "Carlos Mendoza solicitó asesoría para \"Matemáticas III (Cálculo)\" (2026-10-20 a las 10:00).",
+      "type": "info",
+      "read": false,
+      "createdAt": "2026-10-09T14:39:00.494Z"
+    },
+    {
+      "id": "notif-1791556729757-usr-teacher-1",
+      "userId": "usr-teacher-1",
+      "title": "Horario aceptado por estudiante",
+      "message": "Carlos Mendoza aceptó la fecha propuesta para la asesoría de Física General: 2026-10-19 a las 14:00.",
+      "type": "success",
+      "read": false,
+      "createdAt": "2026-10-09T14:38:49.757Z"
+    },
+    {
+      "id": "notif-1791556729753-usr-student-1",
+      "userId": "usr-student-1",
+      "title": "Nueva fecha propuesta para asesoría",
+      "message": "El docente propone realizar la asesoría de Física General el 2026-10-19 a las 14:00. Revisa tu panel para responder.",
+      "type": "info",
+      "read": false,
+      "createdAt": "2026-10-09T14:38:49.753Z"
+    },
+    {
+      "id": "notif-1791556729744-usr-student-1",
+      "userId": "usr-student-1",
+      "title": "¡Asesoría aceptada!",
+      "message": "Tu asesoría de Física General ha sido aceptada para el 2026-10-18 a las 11:30.",
+      "type": "success",
+      "read": false,
+      "createdAt": "2026-10-09T14:38:49.744Z"
+    },
+    {
+      "id": "notif-1791556729730-usr-teacher-1",
+      "userId": "usr-teacher-1",
+      "title": "Nueva solicitud de asesoría",
+      "message": "Carlos Mendoza solicitó asesoría para \"Física General\" (2026-10-18 a las 11:30).",
+      "type": "info",
+      "read": false,
+      "createdAt": "2026-10-09T14:38:49.730Z"
+    },
+    {
+      "id": "notif-1791556711593-usr-teacher-1",
+      "userId": "usr-teacher-1",
+      "title": "Nueva solicitud recibida",
+      "message": "Carlos Mendoza ha solicitado asesoría académica.",
+      "type": "info",
+      "read": false,
+      "createdAt": "2026-10-09T14:38:31.593Z"
+    },
+    {
+      "id": "notif-1791555496465-usr-teacher-1",
+      "userId": "usr-teacher-1",
+      "title": "Nueva solicitud recibida",
+      "message": "Carlos Mendoza ha solicitado asesoría académica.",
+      "type": "info",
+      "read": false,
+      "createdAt": "2026-10-09T14:18:16.465Z"
+    },
+    {
+      "id": "notif-1791555435316-usr-teacher-1",
+      "userId": "usr-teacher-1",
+      "title": "Nueva solicitud recibida",
+      "message": "Carlos Mendoza ha solicitado asesoría académica.",
+      "type": "info",
+      "read": false,
+      "createdAt": "2026-10-09T14:17:15.316Z"
+    },
+    {
+      "id": "notif-1791555425041-usr-psych-1",
+      "userId": "usr-psych-1",
+      "title": "Nueva solicitud recibida",
+      "message": "Carlos Mendoza ha solicitado orientación psicológica.",
+      "type": "info",
+      "read": false,
+      "createdAt": "2026-10-09T14:17:05.041Z"
+    },
+    {
+      "id": "notif-1791555412370-usr-psych-1",
+      "userId": "usr-psych-1",
+      "title": "Nueva solicitud recibida",
+      "message": "Carlos Mendoza ha solicitado orientación psicológica.",
+      "type": "info",
+      "read": false,
+      "createdAt": "2026-10-09T14:16:52.370Z"
+    },
+    {
+      "id": "notif-1791555099208-std-1",
+      "userId": "usr-student-1",
+      "title": "Nueva actividad: Examen de Recuperación Cálculo",
+      "message": "El profesor publicó una nueva actividad para Matemáticas III (Cálculo). Entrega: 2026-10-20",
+      "type": "info",
+      "read": false,
+      "createdAt": "2026-10-09T14:11:39.208Z"
+    },
+    {
+      "id": "notif-1",
+      "userId": "usr-student-1",
+      "title": "Examen próximo",
+      "message": "Tu examen de Matemáticas III es en 3 días (12 de octubre). ¿Deseas activar tu plan de estudio?",
+      "type": "warning",
+      "read": false,
+      "createdAt": "2026-10-09T06:00:00.000Z"
+    },
+    {
+      "id": "notif-2",
+      "userId": "usr-student-1",
+      "title": "Cita de Orientación Confirmada",
+      "message": "La Lic. Mariana Gómez confirmó tu cita para el 14 de octubre a las 11:00 AM.",
+      "type": "success",
+      "read": false,
+      "createdAt": "2026-10-05T12:00:00.000Z"
+    },
+    {
+      "id": "notif-3",
+      "userId": "usr-student-1",
+      "title": "Nuevo Aviso Institucional",
+      "message": "Se publicó: Semana de Bienestar Estudiantil y Talleres Anti-Estrés.",
+      "type": "info",
+      "read": true,
+      "createdAt": "2026-10-02T08:05:00.000Z"
+    }
+  ],
+  "crisisAlerts": []
+}

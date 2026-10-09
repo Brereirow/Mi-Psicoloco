@@ -1,0 +1,6 @@
+{
+  "name": "Mi Psicoloco",
+  "description": "Tu asistente académico y de bienestar. Plataforma integral para estudiantes, docentes, psicólogos y directivos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
